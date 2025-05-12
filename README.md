@@ -14,3 +14,5 @@ It appends to `head` to get our script high in the hierarchy and `Math.random` i
 ## Scripts
 Following URLs are the above loader with the respective script URL already inserted.
 Make a new bookmark, name it whatever you want to trigger it with and then copy any one of the URLs into the URL part.
+
+- [reddit.com → redd.it URL shortener](javascript:(function (){document.getElementsByTagName('head')[0].appendChild(document.createElement('script')).src='https://raw.githubusercontent.com/gooober444/bookmarklets/refs/heads/main/redditUrlShortener.js?'+Math.random();}());)
