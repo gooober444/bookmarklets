@@ -14,6 +14,6 @@ with `customscript.js` being replaced with whatever script you want to load. `Ma
 Following URLs are the above loader with the respective script URL already inserted.
 Make a new bookmark, name it whatever you want to trigger it with and then copy any one of the URLs into the URL part.
 
-- reddit.com → redd.it URL shortener: `javascript:void(function(){var myScript=document.createElement('script');myScript.type='text/javascript';myScript.src='https://gooober444.github.io/bookmarklets/redditUrlShortener.js?t='+Math.random();document.body.appendChild(myScript);})();`
+- reddit.com → redd.it URL shortener:
 
-- Bypass article paywalls: `javascript:void(function(){var myScript=document.createElement('script');myScript.type='text/javascript';myScript.src='https://gooober444.github.io/bookmarklets/bypassArticlePaywall.js?t=%27+Math.random();document.body.appendChild(myScript);})();`
+- Bypass article paywalls:
