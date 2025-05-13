@@ -3,6 +3,7 @@ javascript:(function() {
   // Errors out on Reddit's redesigned frontend, super weird
   fetch(`https://tinyurl.com/api-create.php?url=${sourceEncodedUrl}`)
     .then(response => response.text())
-    .then(shortUrl => alert(`Shortened URL:\n ${shortUrl}`))
+    // Chrome doesn't allow selecting / copying text from alerts with a newline TODO: find workaround
+    .then(shortUrl => alert(`Shortened URL: ${shortUrl}`))
     .catch(error => alert(`Error shortening URL: ${error}`));
 } )();
