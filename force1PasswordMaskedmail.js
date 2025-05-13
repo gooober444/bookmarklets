@@ -1,4 +1,4 @@
-(() => {
+javascript:(() => {
     // Create a form with an email input field and submit button
     const html = `
         <form>
