@@ -1,9 +1,9 @@
 javascript:(function() {
     const articleUrl = window.location.href;
-    // const archiveIsSubmitUrl = 'https://archive.is/submit/?url=';
+    const articleEncodedUrl = encodeURIComponent(articleUrl);
+    /* const archiveIsSubmitUrl = 'https://archive.is/submit/?url='; */
 
-    const bypassUrl = `https://archive.is/submit/?url=${articleUrl}`;
+    const bypassUrl = `https://archive.is/submit/?url=${articleEncodedUrl}`;
 
-    // 4. Redirect the browser to the constructed archive.is URL
     window.location.href = bypassUrl;
 } )();
