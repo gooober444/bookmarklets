@@ -1,5 +1,5 @@
-javascript:(() => {
-    // Create a form with an email input field and submit button
+(function addEmailForm() {
+    // Spawn fake e-mail input field
     const html = `
         <form>
             <label for="email" style="display: none;">Email</label>
@@ -12,10 +12,7 @@ javascript:(() => {
             <button type="submit">Submit</button>
         </form>
     `;
-    
-    // Insert the form at the beginning of the document body
+
     document.body.insertAdjacentHTML('afterbegin', html);
-    
-    // Focus on the email input field
     document.getElementById('op-masked-email-helper').focus();
 })();
