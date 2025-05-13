@@ -7,12 +7,11 @@ I suck at Javascript and generally cobble these together on a needs-basis, so fe
 
 ## Loader
 The general bookmarklet that loads scripts is
-`javascript:(function (){document.getElementsByTagName('head')[0].appendChild(document.createElement('script')).src='https://raw.githubusercontent.com/goober444/bookmarklets/scripts/$$$$.js?'+Math.random();}());`
-with `$$$$.js` being replaced with whatever script you want to load.
-It appends to `head` to get our script high in the hierarchy and `Math.random` is there because of caching dumbness.
+`javascript:void(function(){var myScript=document.createElement('script');myScript.type='text/javascript';myScript.src='https://myuser.github.io/myrepo/customscript.js?t='+Math.random();document.body.appendChild(myScript);})();`
+with `customscript.js` being replaced with whatever script you want to load. `Math.random` for cache busting.
 
 ## Scripts
 Following URLs are the above loader with the respective script URL already inserted.
 Make a new bookmark, name it whatever you want to trigger it with and then copy any one of the URLs into the URL part.
 
-- reddit.com → redd.it URL shortener: `javascript:(function(){document.getElementsByTagName('head')[0].appendChild(document.createElement('script')).src='https://gooober444.github.io/bookmarklets/redditUrlShortener.js?'+Math.random();}());`
+- reddit.com → redd.it URL shortener: `javascript:void(function(){var myScript=document.createElement('script');myScript.type='text/javascript';myScript.src='https://gooober444.github.io/bookmarklets/redditUrlShortener.js?t='+Math.random();document.body.appendChild(myScript);})();`
