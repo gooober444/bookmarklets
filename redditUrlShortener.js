@@ -6,7 +6,7 @@ javascript:(function() {
   if (redditLongUrl !== null && redditLongUrl.groups.commentId == null) {
     prompt("Shortened post URL:", 'https://redd.it/' + redditLongUrl.groups.postId);
   } else if (redditLongUrl !== null && redditLongUrl.groups.commentId !== null) {
-    prompt("Comment URLs can't be shortened.\n" "Shortened post URL:", 'https://redd.it/' + redditLongUrl.groups.postId);
+    prompt('"Comment URLs can't be shortened.\n" "Shortened post URL:"', 'https://redd.it/' + redditLongUrl.groups.postId);
   }
   else {
     alert("This only works on posts on reddit.com");
