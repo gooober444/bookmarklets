@@ -1,10 +1,10 @@
 (function addEmailForm() {
-    // Spawn fake e-mail input field
+    // Spawn a fake e-mail field to trick password manager into offering masked e-mail generation
     const html = `
         <form>
             <label for="email" style="display: none;">Email</label>
             <input 
-                id="op-masked-email-helper" 
+                id="masked-email-helper" 
                 type="email" 
                 name="email" 
                 autocomplete="email"
@@ -14,5 +14,5 @@
     `;
 
     document.body.insertAdjacentHTML('afterbegin', html);
-    document.getElementById('op-masked-email-helper').focus();
+    document.getElementById('masked-email-helper').focus();
 })();
