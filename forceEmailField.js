@@ -8,7 +8,7 @@
                 type="email" 
                 name="email" 
                 autocomplete="email"
-                style="font-size: 100%; padding: 100%; height: 100%; width: 100%;"
+                style="font-size: 100%; padding: 0.5em; height: 100%; width: 100%;"
             >
             <button type="submit">Submit</button>
         </form>
