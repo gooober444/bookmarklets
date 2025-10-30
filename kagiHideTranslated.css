@@ -1,0 +1,9 @@
+/*
+Add to Settings > Apperance > Custom CSS
+Hide pre-translated webpage search results on Kagi.
+"sri-group" is main result, "__srgi"  are sub results.
+You can append `:not(:has(a[href*="tl=en"]))` to allow English translations.
+*/
+:is(div.__srgi, div.sri-group._ext_r):has(a[href*="tl="]):not(:has(a[href*="tl=en"])) {
+    display: none !important;
+}
